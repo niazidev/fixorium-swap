@@ -1,0 +1,9 @@
+{
+  "rewrites": [
+    { "source": "/api/(.*)", "destination": "/backend/$1" }
+  ],
+  "builds": [
+    { "src": "src/index.tsx", "use": "@vercel/node" },
+    { "src": "backend/index.ts", "use": "@vercel/node" }
+  ]
+}
